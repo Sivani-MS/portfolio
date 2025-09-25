@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sivani MS — Portfolio</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --text:#e6eef8;
+      --muted:#99a3b3; --accent:#7c3aed; --accent2:#06b6d4; --glass:rgba(255,255,255,0.03);
+      font-family: Inter, sans-serif;
+    }
+    :root[data-theme='light']{
+      --bg:#f7fafc; --card:#ffffff; --text:#0b1220; --muted:#5b6b78; --accent:#6d28d9; --accent2:#0891b2; --glass:rgba(11,18,32,0.04);
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--bg); color:var(--text); font-family:inherit; line-height:1.5; padding:20px;}
+    a{color:var(--accent); text-decoration:none;}
+    header, section{margin-bottom:32px;}
+    header{display:flex; justify-content:space-between; flex-wrap:wrap; align-items:center;}
+    .logo{font-weight:800; font-size:24px; background:linear-gradient(135deg,var(--accent),var(--accent2)); -webkit-background-clip:text; color:transparent;}
+    nav a{margin-left:16px;}
+    .hero{display:flex; flex-wrap:wrap; gap:24px;}
+    .card{background:var(--card); padding:20px; border-radius:16px; flex:1; min-width:280px;}
+    h1,h2,h3,h4{margin-bottom:12px;}
+    .lead{color:var(--muted);}
+    .skills .skill{margin-bottom:10px;}
+    .bar{height:10px; background:rgba(255,255,255,0.04); border-radius:999px; overflow:hidden;}
+    .bar i{display:block;height:100%; background:linear-gradient(90deg,var(--accent),var(--accent2));}
+    .projects, .skills-grid{display:grid; gap:12px;}
+    .projects{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+    .skills-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+    footer{text-align:center; color:var(--muted);}
+  </style>
+</head>
+<body data-theme="dark">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Sivani MS</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#internship">Internship</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero card">
+    <div>
+      <h1>Hello, I'm Sivani MS</h1>
+      <p class="lead">Computer Science Student | AI & Deep Learning Enthusiast</p>
+      <p>Email: <a href="mailto:sivanims26@gmail.com">sivanims26@gmail.com</a> | Phone: 8590873628</p>
+      <p>
+        <a href="https://www.linkedin.com/in/sivani-ms-a2251b2b3/" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/Sivani-MS" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>
+      Enthusiastic and detail-oriented Computer Science student with a solid foundation in programming and data structures, 
+      and hands-on experience in academic and real-world AI projects. Passionate about building applications that solve real problems.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h4>Programming Languages</h4>
+        <p>Python, C, R, SQL, Java</p>
+      </div>
+      <div>
+        <h4>Deep Learning Frameworks</h4>
+        <p>TensorFlow, PyTorch, CNN</p>
+      </div>
+      <div>
+        <h4>Libraries & Tools</h4>
+        <p>NumPy, Pandas, Matplotlib, LaTeX</p>
+      </div>
+      <div>
+        <h4>Soft Skills</h4>
+        <p>Leadership, Time Management, Multitasking, Collaboration</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Alzheimer Patient & Caregiver Assistance App</h3>
+        <p><strong>July 2025 – Present</strong></p>
+        <p>Mobile app using Flutter, Dart, Firebase with patient location tracking and brain training games to support cognitive health.</p>
+      </div>
+      <div class="card">
+        <h3>Violence Detection System</h3>
+        <p><strong>April – June 2025</strong></p>
+        <p>End-to-end video violence detection system using Python, TensorFlow, OpenCV, with 3D & 4D CNNs for high accuracy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship -->
+  <section id="internship" class="card">
+    <h2>Internship</h2>
+    <h3>Artificial Intelligence – Agratas Edutech</h3>
+    <p><strong>June – August 2025</strong></p>
+    <ul>
+      <li>Industrial training and hands-on exposure to AI concepts and practices.</li>
+      <li>Completed projects demonstrating applied AI techniques.</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="card">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Computer Science & Business Systems</strong>, Vimal Jyothi Engineering College, 2022–2026, CGPA: 8.05</li>
+      <li><strong>Higher Secondary (Biology Science)</strong>, Govt. HSS Kokkallur, 2020–2022, Score: 92%</li>
+      <li><strong>High School (SSLC)</strong>, Govt. HSS Kokkallur, 2020, Score: 100%</li>
+    </ul>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="card">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Cloud Computing – NPTEL (Jan – Mar 2025)</li>
+      <li>Data Analytics using R – VJEC Chemperi (Oct 2023)</li>
+      <li>Power BI – White Track Technologies (Sep 2024)</li>
+      <li>Python Intermediate Level – Infosys Springboard (Sep 2025)</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:sivanims26@gmail.com">sivanims26@gmail.com</a> or connect via LinkedIn/GitHub.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sivani MS • Built with ❤️</p>
+  </footer>
+
+</body>
+</html>
